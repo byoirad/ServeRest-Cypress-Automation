@@ -1,5 +1,9 @@
-
 export const Signup = {
+
+    go: function(){
+        cy.visit('https://front.serverest.dev/cadastrarusuarios')
+    },
+
     isVisible: function() {
         cy.get('.form').should('be.visible')
     },
